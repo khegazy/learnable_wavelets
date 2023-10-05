@@ -3,8 +3,8 @@
 This module provides the learnable_wavelet class which builds a wavelet basis set from a learnable mother wavelet.
 In doing so, the only learnable parameters are the Fourier components of the mother wavelet.
 All the daughter wavelets are derived from the mother and do not introduce any further learnable parameters.
-The $i^\text{th}$ daughter is defined as
-$D_i(t) = M\left(\frac{t}{2^i}\right)$
+The $i^\text{th}$ daughter is defined as\
+$D_i(t) = M\left(\frac{t}{2^i}\right)$\
 where $M(t)$ is the learned mother wavelet.
 With this structure, one is able to expand the expressiveness of their basis set without adding more learnable parameters.
 This is because one is provided with N bases but only one (the mother) must be learned.
