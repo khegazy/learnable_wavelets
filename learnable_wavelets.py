@@ -176,7 +176,8 @@ class learnable_wavelets(torch.nn.Module):
         
         
     def get_fourier_spectrum(self,
-                             full_spectra: bool = False):# -> tuple[torch.FloatTensor, torch.FloatTensor]:
+                             full_spectra: bool = False
+                             ):# -> tuple[torch.FloatTensor, torch.FloatTensor]:
         """
         Returns the Fourier spectra for the mother and daughter
         wavelets.
